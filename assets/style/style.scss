@@ -1,0 +1,88 @@
+// Variables 
+$white: #fff;
+$black: #000;
+$font: Poppins;
+$fallback-font: Arial,
+Helvetica,
+sans-serif;
+
+// Mixins
+@mixin white-text {
+    color: $white;
+}
+
+// Global Attributes
+::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+body {
+    font-family: $font;
+    height: 100vh;
+
+    #expense-tracking {
+        margin-top: 15px;
+
+        #input-form {
+            margin-bottom: 15px;
+
+            input,
+            button {
+
+                &:focus {
+                    outline: 0px !important;
+                    box-shadow: none !important;
+                }
+            }
+        }
+
+        #table {
+            background-color: $white;
+
+            th {
+                font-weight: normal;
+            }
+        }
+    }
+
+    footer {
+        @include white-text();
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        padding:5px 0px;
+
+        h1 {
+            font-size: 15px;
+        }
+    }
+}
+
+@media (max-width: 1076px) {
+    input {
+        font-size: 10px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    input,
+    #name {
+        font-size: 9px !important;
+    }
+
+    #name, input {
+        padding: 2px 4px !important;
+    }
+}
+
+@media (max-width: 450px) {
+    #table {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 325px) {
+    input {
+        font-size: 7px !important;
+    }
+}
