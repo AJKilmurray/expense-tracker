@@ -19,6 +19,7 @@ function validateInput() {
         if (item.value.length > 0) {
             tableList.push(item.value);
         } else if (!item.value.length) {
+            tableList = [];
             return invalidInput(item);
         }
     }
