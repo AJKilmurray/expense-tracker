@@ -1,7 +1,10 @@
 // Variables 
 $white: #fff;
 $black: #000;
+$purple: #9B30FF;
+$lime: #00FF6F;
 $font: Poppins;
+$table-font: Quicksand;
 $fallback-font: Arial,
 Helvetica,
 sans-serif;
@@ -20,6 +23,21 @@ body {
     font-family: $font;
     height: 100vh;
 
+    .navbar {
+
+        .navbar-brand {
+            font-size: 30px;
+            font-weight: 400;
+        }
+
+        navbar-toggler {
+            
+            &:focus {
+                box-shadow: none !important;
+            }
+        }
+    }
+
     #expense-tracking {
         margin-top: 15px;
 
@@ -37,10 +55,41 @@ body {
         }
 
         #table {
-            background-color: $white;
+            border-collapse: collapse !important;
+            font-family: $table-font;
+            margin: 20px 0;
+            font-size: 16px;
+            border-radius: 10px 10px 0 0;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 
-            th {
-                font-weight: normal;
+            thead {
+
+                tr {
+                    color: $white;
+                    text-align: left;
+                    font-weight: bold;
+                }
+            }
+
+            th, 
+            td {
+                padding: 12px 15px;
+            }
+
+            tbody {
+
+                tr {
+                    border-bottom: 1px solid #ddd !important;
+
+                    &:nth-child(even) {
+                        background-color: #f3f3f3;
+                    }
+
+                    &:last-of-type {
+                        border-bottom: 2px solid #212529 !important;
+                    }
+                }
             }
         }
     }
@@ -48,9 +97,10 @@ body {
     footer {
         @include white-text();
         text-align: center;
-        position: absolute;
+        position: fixed;
         bottom: 0;
         padding:5px 0px;
+        margin-top:50px;
 
         h1 {
             font-size: 15px;
@@ -77,12 +127,28 @@ body {
 
 @media (max-width: 450px) {
     #table {
-        font-size: 10px;
+        font-size: 10px !important
     }
 }
 
 @media (max-width: 325px) {
     input {
         font-size: 7px !important;
+    }
+}
+
+@media (max-width: 300px) {
+    #table {
+        font-size: 8px !important;
+    }
+
+    nav {
+        .container-fluid {
+            justify-content: center !important;
+        }
+
+        a {
+            text-align: center;
+        }
     }
 }
