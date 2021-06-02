@@ -13,7 +13,6 @@ export function appendToTable(arr) {
     for (let item of arr) {
         let column = document.createElement("td");
         column.textContent = item;
-        column.className = "border-1";
         row.appendChild(column);
     }
     form.reset();
