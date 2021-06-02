@@ -7,6 +7,16 @@ body {
   height: 100vh;
 }
 
+body .navbar .navbar-brand {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+body .navbar navbar-toggler:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
 body #expense-tracking {
   margin-top: 15px;
 }
@@ -23,19 +33,46 @@ body #expense-tracking #input-form button:focus {
 }
 
 body #expense-tracking #table {
-  background-color: #fff;
+  border-collapse: collapse !important;
+  font-family: Quicksand;
+  margin: 20px 0;
+  font-size: 16px;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-body #expense-tracking #table th {
-  font-weight: normal;
+body #expense-tracking #table thead tr {
+  color: #fff;
+  text-align: left;
+  font-weight: bold;
+}
+
+body #expense-tracking #table th,
+body #expense-tracking #table td {
+  padding: 12px 15px;
+}
+
+body #expense-tracking #table tbody tr {
+  border-bottom: 1px solid #ddd !important;
+}
+
+body #expense-tracking #table tbody tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+body #expense-tracking #table tbody tr:last-of-type {
+  border-bottom: 2px solid #212529 !important;
 }
 
 body footer {
   color: #fff;
   text-align: center;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   padding: 5px 0px;
+  margin-top: 50px;
 }
 
 body footer h1 {
@@ -60,13 +97,27 @@ body footer h1 {
 
 @media (max-width: 450px) {
   #table {
-    font-size: 10px;
+    font-size: 10px !important;
   }
 }
 
 @media (max-width: 325px) {
   input {
     font-size: 7px !important;
+  }
+}
+
+@media (max-width: 300px) {
+  #table {
+    font-size: 8px !important;
+  }
+  nav .container-fluid {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  nav a {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
