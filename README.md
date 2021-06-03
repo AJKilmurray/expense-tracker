@@ -17,19 +17,28 @@ Once the button has been clicked, the expense will be removed!
 ## Configuration
 The config file can be located [here](https://github.com/AJKilmurray/expense-tracker/blob/main/assets/js/config.js).
 
-**defaultColor**
+
+**defaultColor**  
+
 Background color of the input fields 
    * Must be a valid color (HEX, rgb, hsl)
 
-**errorColor**
+**errorColor**  
+
 Invalid input color for input fields
    * Must be a valid color (HEX, rgb, hsl)
 
-**currency**
+
+**currency**  
+
 Selected currency symbol used for the expense tracker
 
-**column1, column2, column3**
+
+**column1, column2, column3**  
+
 Column names for the table
 
-**field1**
+
+**field1**  
+
 Text within the grey colored field at the left of the input
