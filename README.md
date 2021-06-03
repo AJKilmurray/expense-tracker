@@ -1,6 +1,6 @@
 # How to use the Expense Tracker
 ### Instructions
-![Header](https://i.imgur.com/jCaWuLm.png)
+![Header](https://i.imgur.com/jCaWuLm.jpg)
 1. Start with the name of the expense, being the name of the expense (First field)
     * For example, if you wanted to track your expense of eggs, you would name your expense `Eggs`.
 2. Input the date that you paid for your expense (Second field)
