@@ -8,3 +8,9 @@
 4. You can now add your expense to your expense tracker! Click on the green button located at the end of the fields with the white `+` text.
 
 Well done! You have successfully logged an expense! 
+
+#### Deleting an expense from your tracked expenses
+![Header](https://i.imgur.com/pyLyNV1.jpg)
+
+To delete an expense from your tracked expenses, click on the red button located at the **end** of the expense row.  
+Once the button has been clicked, the expense will be removed!
