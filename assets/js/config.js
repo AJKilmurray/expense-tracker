@@ -2,7 +2,7 @@
 ===============================================
 
 To use this config, please read the README.md 
-file located in the root folder.
+file located in the root directory.
 
 ===============================================
 */
@@ -21,4 +21,4 @@ export const tableNames = {
 
 export const fieldName = {
     field1 : 'Expense'
-}
+};
