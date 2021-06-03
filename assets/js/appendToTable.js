@@ -8,7 +8,7 @@ export function appendToTable(arr) {
     const row = document.createElement('tr');
     const button = document.createElement('button');
     button.setAttribute('onclick', 'deleteRow(this);');
-    button.textContent = '-';
+    button.textContent = 'X';
     let date = arr[1].split("-").reverse().join("/"); // Converts date to dd/mm/yyyy format instead of yyyy-mm-dd
     arr[1] = date;
     arr[2] = `${field.currency}${arr[2]}`;
