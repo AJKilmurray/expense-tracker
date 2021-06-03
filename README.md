@@ -1,5 +1,4 @@
-# How to use the Expense Tracker
-### Instructions
+## Instructions
 ![Header](https://i.imgur.com/jCaWuLm.jpg)
 1. Start with the name of the expense, being the name of the expense (First field)
     * For example, if you wanted to track your expense of eggs, you would name your expense `Eggs`.
@@ -9,7 +8,7 @@
 
 Well done! You have successfully logged an expense! 
 
-#### Deleting an expense from your tracked expenses
+### Deleting an expense from your tracked expenses
 ![Header](https://i.imgur.com/pyLyNV1.jpg)
 
 To delete an expense from your tracked expenses, click on the red button located at the **end** of the expense row.  
