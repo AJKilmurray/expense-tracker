@@ -66,6 +66,26 @@ body #expense-tracking #table tbody tr:last-of-type {
   border-bottom: 2px solid #212529 !important;
 }
 
+body #expense-tracking #table tbody tr td:last-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #expense-tracking #table td button {
+  border: none;
+  color: #fff;
+  background-color: #ff000060;
+  padding: 4px 12px !important;
+  border-radius: 5px;
+}
+
 body footer {
   color: #fff;
   text-align: center;

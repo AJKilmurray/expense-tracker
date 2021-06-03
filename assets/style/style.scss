@@ -89,7 +89,24 @@ body {
                     &:last-of-type {
                         border-bottom: 2px solid #212529 !important;
                     }
+
+                    td {
+
+                        &:last-of-type {
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: center;
+                        }
+                    }
                 }
+            }
+
+            td button {
+                border: none;
+                color: $white;
+                background-color: #ff000060;
+                padding: 4px 12px !important;
+                border-radius: 5px;
             }
         }
     }
